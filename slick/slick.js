@@ -492,7 +492,7 @@
                 dot.append($('<li />').append(_.options.customPaging.call(this, _, i)));
             }
 
-            _.$dots = dot.appendTo(__.options.dotsContainer?$(_.options.dotsContainer):_.options.appendDots);
+            _.$dots = dot.appendTo(_.options.dotsContainer?$(_.options.dotsContainer):_.options.appendDots);
 
             _.$dots.find('li').first().addClass('slick-active').attr('aria-hidden', 'false');
 
